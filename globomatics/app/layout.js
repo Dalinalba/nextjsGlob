@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {Open_Sans} from "@next/font/google";
 import styles from  "./rootStyle.module.css";
+import "./global.css";
 
 const openSans = Open_Sans({
     subsets: ["latin"],
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={openSans.className}>
         <head/>
       <body>
-        <header className={styles.header}>
+        <header>
       <h1>
       <Link className={styles.homeLink} href='/home'>Globomantics</Link>
       </h1>
